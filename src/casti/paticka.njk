@@ -1,0 +1,12 @@
+<footer>
+<h3 class="paticka__nadpis">Podobné weby<h3>
+
+<ul>
+	{% for web in podobneWeby %}
+		<li><a href="/web/{{ web.adresa | slug }}">{{ web.nazev }}</a></li>
+	{% endfor %}
+</ul>
+
+
+<h3 class="paticka__nadpis">Obecné<h3>
+</footer>

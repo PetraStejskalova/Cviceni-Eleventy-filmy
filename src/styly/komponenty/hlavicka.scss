@@ -1,10 +1,11 @@
 .hlavicka {
-    background-color: #9c27b0;
+    background-color: $hlavni-barva;
 }
 
 .hlavicka__obsah {
     margin: 0 auto;
-    padding: 1rem;
+    padding: $mezera-od-okraju;
+    max-width: $sirka-obsahu;
 }
 
 .hlavicka__logo {
