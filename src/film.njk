@@ -11,19 +11,19 @@ permalink: "/film/{{ film.nazev | slug }}/"
     <h2 class="hlavni-nadpis">{{ film.nazev }}</h2>
     
     <dl class="detail__podrobnosti">
-      <dt class="detail__popisek">Rok</dt>
+      <dt class="detail__popisek">Rok:</dt>
       <dd>{{ film.rok }}</dd>
-      <dt class="detail__popisek">Země</dt>
-      <dd>{{ film.zeme }}</dd>
-      <dt class="detail__popisek">Žánr</dt>
-      <dd>{{ film.zanr }}</dd>
-      <dt class="detail__popisek">Délka</dt>
-      <dd>{{ film.delka }}</dd>
+      <dt class="detail__popisek">Země:</dt>
+      <dd>{{ film.zeme | join(', ') }}</dd>
+      <dt class="detail__popisek">Žánr:</dt>
+      <dd>{{ film.zanr | join(' / ')  }}</dd>
+      <dt class="detail__popisek">Délka:</dt>
+      <dd>{{ film.delka }} minut</dd>
     </dl>
         
     <h3 class="podnadpis">Obsah</h3>
     
-    <p class="detail__obsah">{{ film.obsah.text }} <span class="autor"><a href="{{ film.obsah.autor.odkaz }}">({{ film.obsah.autor.jmeno }})</a></span></p>
+    <p class="detail__obsah">{{ film.obsah.text }} <span class="autor">(<a href="{{ film.obsah.autor.odkaz }}">{{ film.obsah.autor.jmeno }}</a>)</span></p>
     
 </main>
 

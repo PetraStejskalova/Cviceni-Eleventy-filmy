@@ -1,0 +1,30 @@
+.detail__podrobnosti {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.2rem 0.5rem;
+    margin: 0 0 1.7rem;
+}
+
+.detail__popisek {
+    grid-column: 1;
+    font-weight: 700;
+}
+
+.detail__podrobnosti dd {
+    margin: 0;
+}
+
+.podnadpis {
+    margin: 0.8rem 0 0.2rem;
+    font-size: 1.5rem;
+}
+
+.autor {
+    font-style: italic;
+}
+
+.autor a {
+    color: $doplnkova-barva;
+    text-decoration: none;
+}
+

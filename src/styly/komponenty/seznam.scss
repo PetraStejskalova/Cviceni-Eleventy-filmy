@@ -22,14 +22,14 @@
 
 .seznam__odkaz {
     text-decoration: none;
-    color: #3d5afe;
+    color: $doplnkova-barva;
 }
 
 .seznam__odkaz::before {
     content: "";
     width: 0.5rem;
     height: 0.5rem;
-    background-color: #3d5afe;
+    background-color: $doplnkova-barva;
     display: inline-block;
     margin-right: 0.5rem;
     margin-bottom: 0.1rem;
