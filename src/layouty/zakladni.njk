@@ -12,11 +12,11 @@
 </head>
 
 <body>
-    {% include "hlavicka.njk" %}
-
-    {{ content | safe }}
-
-    {% include "paticka.njk" %}
+    <div class="layout">
+        {% include "hlavicka.njk" %}
+        {{ content | safe }}
+        {% include "paticka.njk" %}
+    </div>
 </body>
 
 </html>
