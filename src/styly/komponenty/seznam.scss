@@ -1,0 +1,36 @@
+.layout__telo {
+	margin: 0 auto;
+	padding: 2rem 1rem;
+	max-width: $sirka-obsahu;
+}
+
+.hlavni-nadpis {
+	margin: 0 0 1rem;
+	font-size: 2rem;
+}
+
+.seznam {
+    padding: 0;
+    margin: 0.5rem 0 0;
+    list-style: none;
+}
+
+.seznam__polozka {
+    padding: 0.2rem 0;
+    line-height: 1.1;
+}
+
+.seznam__odkaz {
+    text-decoration: none;
+    color: #3d5afe;
+}
+
+.seznam__odkaz::before {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #3d5afe;
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.1rem;
+}
