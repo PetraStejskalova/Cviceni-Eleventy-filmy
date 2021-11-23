@@ -1,22 +1,27 @@
 .detail {
     display: grid;
     gap: 0 2rem;
-}
 
-.detail__podrobnosti {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 0.2rem 0.5rem;
-    margin: 0 0 1.7rem;
-}
+    &__podrobnosti {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 0.2rem 0.5rem;
+        margin: 0 0 1.7rem;
+    }
 
-.detail__popisek {
-    grid-column: 1;
-    font-weight: 700;
-}
+    &__popisek {
+        grid-column: 1;
+        font-weight: 700;
+    }
 
-.detail__podrobnosti dd {
-    margin: 0;
+    &__podrobnosti dd {
+        margin: 0;
+    }
+
+    &__plakat {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .podnadpis {
@@ -26,16 +31,38 @@
 
 .autor {
     font-style: italic;
+
+    & a {
+        color: $doplnkova-barva;
+        text-decoration: none;
+    }
 }
 
-.autor a {
-    color: $doplnkova-barva;
-    text-decoration: none;
-}
+.hodnoceni {
+    width: 7.5rem;
+    height: 1.5rem;
+    display: flex;
+    --skore: 0;
 
-.detail__plakat {
-    width: 100%;
-    height: auto;
+    &--skore-5 {
+        --skore: 5;
+    }
+
+    &--skore-4 {
+        --skore: 4;
+    }
+
+    &::before, &::after {
+        content: "";
+        background-image: url(obrazky/hvezda-vyplnena.svg);
+        background-size: contain;
+        flex-grow: var(--skore);
+    }
+
+    &::after {
+        background-image: url(/obrazky/hvezda-prazdna.svg);
+        flex-grow: calc(5 - var(--skore));
+    }
 }
 
 @media (min-width: $sirka-obsahu)  {

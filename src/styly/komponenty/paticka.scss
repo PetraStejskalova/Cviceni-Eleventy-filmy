@@ -1,38 +1,38 @@
 .paticka {
     background-color: #fafafa;
     padding: 1rem 0;
-}
 
-.paticka__obsah {
-    margin: 0 auto;
-    padding: $mezera-od-okraju;
-    max-width: $sirka-obsahu;
-}
+    &__obsah {
+        margin: 0 auto;
+        padding: $mezera-od-okraju;
+        max-width: $sirka-obsahu;
+    }
 
-.paticka__casti {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    gap: 1rem;
-}
+    &__casti {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        gap: 1rem;
+    }
 
-.paticka__nadpis {
-    margin: 0;
-    font-size: 1.1rem;
-    color: #303030;
-}
+    &__nadpis {
+        margin: 0;
+        font-size: 1.1rem;
+        color: #303030;
+    }
 
-.paticka__seznam {
-    padding: 0;
-    margin: 0.5rem 0 0;
-    list-style: none;
-}
+    &__seznam {
+        padding: 0;
+        margin: 0.5rem 0 0;
+        list-style: none;
+    }
 
-.paticka__polozka {
-    padding: 0.2rem 0;
-    line-height: 1.1;
-}
+    &__polozka {
+        padding: 0.2rem 0;
+        line-height: 1.1;
+    }
 
-.paticka__odkaz {
-    text-decoration: none;
-    color: #444444;
+    &__odkaz {
+        text-decoration: none;
+        color: #444444;
+    }
 }
